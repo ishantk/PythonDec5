@@ -56,3 +56,35 @@ gujratStatePopulation = [4567, 7653, 8987, 4567, 3322]
 indiaPopulation = [[1234, 3456, 6789, 1245, 6789],[4567, 7653, 8987, 4567, 3322]]
 
 # Which state is more populated ?
+
+#List : stores elements using indexing(0 to n-1) Technique
+ages1 = [10, 10, 12, 13, 21, 54, 21, 12]
+print(ages1)
+print(type(ages1))
+
+#Set : stores elements using hashing(hashCode) Technique
+ages2 = {10, 10, 12, 13, 21, 54, 21, 12}
+print(ages2)
+print(type(ages2))
+
+
+#Tuple : stores elements using indexing(0 to n-1) Technique | IMMUTABLE
+ages3 = (10, 10, 12, 13, 21, 54, 21, 12)
+print(ages3)
+print(type(ages3))
+
+
+ages1.append(88)
+ages2.add(77)
+
+print(ages1)
+print(ages2)
+
+for x in ages3:
+    print(x,end='*')
+
+print()
+print("----")
+print()
+for i in range(0,len(ages3)):
+    print(ages3[i],end='-')
