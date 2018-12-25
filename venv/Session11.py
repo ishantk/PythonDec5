@@ -1,6 +1,5 @@
 import mysql.connector
 
-
 # Passed Object as Reference
 def saveStudentInDB(sRef):
 
