@@ -15,8 +15,16 @@ table = pd.read_csv("AllCountries.csv")
 
 # Gives basic Analysis on Columns automatically !!
 # Statistical Summary
-print(table.describe())
+# print(table.describe())
 
 # Write a Program to find all countries with Land Area greater than 2000
+
+table1 = table.loc[:, ["Country", "LandArea"]]
+print(table1)
+
+for row in table1.itertuples():
+    if row[2] > 2000:
+        print(row)
+
 # Compare GDP of Top 10 Richest Countries
 
